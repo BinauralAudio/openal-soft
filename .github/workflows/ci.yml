@@ -165,10 +165,10 @@ jobs:
         name: OpenALSoft-${{matrix.config.name}}
         path: build/release/${{matrix.config.name}}
 
-  release:
-    needs: build
-    runs-on: linux-latest
-    steps:
+#  release:
+#    needs: build
+#    runs-on: linux-latest
+#    steps:
 
     - name: Artifact downloader
       uses: bettermarks/action-artifact-download@0.4.0
